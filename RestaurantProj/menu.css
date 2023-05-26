@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    position: relative; /* Assist "position: absolute" below */
+    padding-top: 95px; /* Must match header height; make up for header being removed from the document flow */
+    padding-bottom: 60px; /* Must match footer height; make up for footer being removed from the document flow */
+    min-height: 100%; /* Force body to be at least the size of the screen */
+    background: grey; /* Backup color */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: white;
+    
+  }
+  
+  
+  * {
+    margin:0; padding:0;
+    box-sizing:border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .5s linear;
+  }
+  
+  html{
+    font-size: 62.5%;
+    scroll-behavior:  smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+    
+  }
+  
+  header{
+    position: fixed;
+    top:0; left:0; right:0;
+    background: #000000;
+    padding: 3rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;    /* separate class logo from class navbar*/
+    z-index: 1000;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+  }
+  
+  header .logo{
+    font-size: 3rem;
+    color: white;
+    font-weight: bolder;
+  }
+  
+  
+  
+  header .navbar a{
+    font-size: 2rem;
+    padding: 0 1.5rem;
+    color: white;
+  
+    
+  }
+  
+  header .booking a{
+    font-size: 2rem;
+    padding: 0 1.5rem;
+    color: white;
+    border-radius: 50px;
+    border-color: white;
+  }
+  
+  
+  
+  .navbar a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .navbar a:hover {    /* when hover*/
+    background-color: #965913;
+    color: black;
+    border-radius: 10px;
+  
+  
+  }  

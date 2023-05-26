@@ -1,0 +1,295 @@
+/* @extend display-flex; */
+display-flex, .booking-content {
+    display: flex;
+    display: -webkit-flex; }
+  
+  /* @extend list-type-ulli; */
+  list-type-ulli, ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0; }
+  
+  a:focus, a:active {
+    text-decoration: none;
+    outline: none;
+    transition: all 300ms ease 0s;
+    -moz-transition: all 300ms ease 0s;
+    -webkit-transition: all 300ms ease 0s;
+    -o-transition: all 300ms ease 0s;
+    -ms-transition: all 300ms ease 0s; }
+  
+  
+  
+  img {
+    max-width: 100%;
+    height: auto; }
+  
+  figure {
+    margin: 0; }
+  
+  p {
+    margin-bottom: 0px; }
+  
+  h2 {            /* for booking place title*/
+    line-height: 1.8;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    color: #fff;
+    font-family: Poppins;
+    font-size: 21px;
+    text-align: center;
+    margin-bottom: 28px; }
+  
+  .clear {
+    clear: both; }
+  
+  body {    /* affects whole backgorund area (bottom layer) */
+    font-size: 14px;
+    line-height: 1.8;
+    color: #fff;
+    background: #f5ae6b;
+    font-weight: 400;
+    font-family: Poppins;
+    margin: 0px;
+    background-image: url("background.jpeg") no-repeat ;  
+    background-size: cover; }    /* background pic changed */
+  
+  .main {
+    padding: 115px 0;
+    position: relative; }
+  
+  .background-top {    /* whole background of image and info (top layer)*/
+    width: 1250px;
+    background: #000000;
+    margin: 0 auto;
+    box-shadow: 0px 10px 9.9px 0.1px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -o-border-radius: 10px;
+    -ms-border-radius: 10px; }
+  
+  .booking-content {
+    flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    -ms-flex-wrap: wrap; }
+  
+  .booking-image {
+    width: 58.33%;          /* percent of whole area used by info+image aka left: ;*/
+    margin-bottom: 0px;
+    display: flex; 
+    flex-wrap: wrap; }
+  
+  
+  .booking-imgtopL {    /* area of food image*/
+    width: 50%;
+    height: 50%;
+    border-top-left-radius: 10px; }
+  
+  .booking-imgtopR {    /* area of food image*/
+    width: 50%;
+    height: 50%;  }
+  
+  .booking-imgbottomL {    /* area of food image*/
+    width: 50%;
+    height: 50%;
+    border-bottom-left-radius: 10px; }
+  
+  .booking-imgbottomR {    /* area of food image*/
+    width: 50%;
+    height: 50%;
+    box-shadow: 10px 10px 5px lightblue inset;}
+  
+  .booking-form {
+    width: 41.67%;
+    background: #111;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px; }
+  
+  .number-option {
+    margin-bottom: 65px;
+    padding-top: 20px; }
+    .number-option input {
+      width: 0;
+      height: 0;
+      position: absolute;
+      left: -9999px; }
+    .number-option label {
+      padding-top: 4px; }
+    .number-option input + label {
+      margin: 0 3px;
+      box-sizing: border-box;
+      position: relative;
+      display: inline-block;
+      border: solid 2px #af740e;    /* outline around the circles options */
+      background-color: #e60f0f;    /* inside the circles options */
+      font-size: 14px;
+      font-weight: 600;
+      color: #888;
+      text-align: center;
+      transition: border-color .15s ease-out,  color .25s ease-out,  background-color .15s ease-out, box-shadow .15s ease-out;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      -moz-border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -o-border-radius: 50%;
+      -ms-border-radius: 50%; }
+    .number-option input:checked + label {        /* when box is selected, this happens */
+      background-color: #174b72;    
+      color: #e51f1f;            /* text color changes */
+      border-color: #000000;
+      z-index: 1; }
+    .number-option input:focus + label {
+      outline: none; }
+    .number-option input:hover {  /* allows all text to hover */
+      background-color: #111;
+      color: #FFF;
+      border-color: #111; }
+  
+  .radio-item-list {
+    margin: 0 -3px; }
+  
+  
+  form {        /* How far text is from the borders */
+    padding: 72px 70px 70px 70px; }
+  
+  .form-group {        /* distance between the input groups from eachother */
+    margin-bottom: 10px;
+    position: relative;
+    color: black;}
+  
+  .form-input {      /* distance of text from input area */
+    padding-top: 21px; }
+  
+  .form-label {     /* The text for name and phone number */
+    position: absolute;
+    transition: 0.25s ease;
+    -moz-transition: 0.4s ease;       /* speed of the "your name and your phone number" text moving up */
+    -webkit-transition: 0.4s ease;
+    -o-transition: 0.4s ease;
+    -ms-transition: 0.25s ease;
+    color: #ffffff;     /* text colour for name and phone number */
+    left: 0;
+    top: 23px; }     /* position of text */
+  
+  input {
+    transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -webkit-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+    -ms-transition: 0.3s ease;
+    padding-top: 10px; }
+    input:focus + .form-label, input:valid + .form-label {
+      top: 1px;
+      font-size: 11px;
+      color: #edb77d;      /* color of text after moving  */}    
+  
+  input, select {
+    box-sizing: border-box;
+    width: 100%;
+    display: block;
+    border: none;
+    font-family: Poppins;
+    color: #ffffff;     
+    background: transparent;
+    border-bottom: 1px solid #999;   /* color of bottom line */
+    padding: 4px 0; }
+    input:focus, select:focus {
+      border-bottom: 1px solid #edb77d;  /* color of box when suer tries to input info */}
+  
+  
+  .submit {
+    width: auto;
+    background: #edb77d;
+    color: #fff;
+    padding: 15px 43px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -o-border-radius: 5px;
+    -ms-border-radius: 5px;
+    cursor: pointer; }
+    .submit:hover {
+      background: #e79e50;  /* color of text when clicked */ }
+  
+  
+  .label-radio {
+    display: block;
+    margin-bottom: 5px;
+    color: #ffffff;}    /* colour of "select your dining space" */
+  
+  .verify-booking {
+    color: #edb77d;
+    font-size: 11px;
+    margin-top: 14px;    /* distance of text from submit button */
+    display: block; }
+    .vertify-booking:hover {
+      text-decoration: underline; }
+  
+  .select-list {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 47px; }
+  
+  .list-item {
+    position: absolute;
+    width: 100%; }
+  
+  #time {
+    z-index: 99;
+    color: white;
+  }
+  
+  #timevar {
+    color: black;
+  }
+  
+  
+  @media screen and (max-width: 1200px) {
+    .information {
+      width: calc( 100% - 30px);
+      max-width: 100%;
+      background: transparent; }
+  
+    .booking-content {
+      flex-direction: column;
+      -moz-flex-direction: column;
+      -webkit-flex-direction: column;
+      -o-flex-direction: column;
+      -ms-flex-direction: column; }
+  
+    .booking-image, .booking-form {
+      width: 100%; }
+  
+    .booking-image {
+      order: 2;
+      text-align: center; }
+  
+    .booking-form {
+      order: 1;
+      border-top-right-radius: 0px;
+      border-bottom-right-radius: 0px; }
+  
+    .booking-img {
+      border-top-left-radius: 0px;
+      border-bottom-left-radius: 0px;
+      width: 100%; } }
+  @media screen and (max-width: 480px) {
+    .radio-item {
+      display: block;
+      margin-bottom: 15px;
+      width: 150px; }
+  
+    .active {
+      padding: 7px 1px; }
+  
+    form {
+      padding: 72px 40px 70px 40px; } }
+  

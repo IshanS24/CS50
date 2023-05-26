@@ -1,0 +1,27 @@
+PROBLEM SET 0 -
+- print(f"Leave ${tip:.2f}"): [f strings] used to indent variable 'tip'
+                              [tip:x2f] possibly rounds to 2 dp
+
+- floatnum = d.replace("$", ""): [replace] replaces value with another in parenthesis
+inbuilt functions need aramters which is why e.g replace() or .upper()
+
+
+PROBLEM SET 1 -
+- greet = str(input("Greeting: ")).lower().strip(): [.strip] removes all white spaces between inputed text
+
+- x, y, z = expression.split(" "): [split input into 3 separate variables] e.g 1 + 1 is 3 variables
+
+PROBLEM SET 3 - 
+
+-  if i.isupper():
+        name = name.replace(i, f"_{i.lower()}") [or .isupper] if character is uppercase, turn it to lowercase
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sign Up Form by Colorlib</title>
+  <script defer src="script.js"></script>
+    <!-- URL for fonts -->
+    <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
+
+    <!-- link html to the css for editing -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+  
+<body>
+        <!-- ADD DELIVERY -->
+    <div class="main">
+
+        <div class="background-top"> <!-- class for whole background of image and info (top layer) -->
+            <div class="booking-content">
+                <div class="booking-image">    <!-- class for home page picture  -->
+                    <img class="booking-imgtopL" src="Images/restaurant download.jpeg" alt="Booking Image">
+                    <img class="booking-imgtopR" src="Images/food.jpeg"" alt="Booking Image">
+                    <img class="booking-imgbottomL" src="Images/food.jpeg" alt="Booking Image">
+                    <img class="booking-imgbottomR" src="Images/food.jpeg"" alt="Booking Image">
+                </div>
+                <div class="booking-form">      <!-- class for users information -->
+                    <form id="booking-form">
+                        <h2>Booking details for your dinner!</h2>    <!-- heading/title -->
+                        <div class="form-group form-input">
+                            <input type="text" name="name" id="name" value="" required/>
+                            <label for="name" class="form-label">Your name</label>        <!-- variable for name -->
+                        </div>
+                        <div class="form-group form-input">
+                            <input type="number" name="phone" id="phone" value="" required />
+                            <label for="phone" class="form-label">Your phone number</label>    <!-- variable for phone number -->                        </div>
+                        <div class="form-group">
+                            <div class="select-list">   <!-- Booking time period -->
+                                <select name="time" id="time" required>    <!-- user must input -->
+                                    <option id="timevar" >Time</option>
+                                    <option id="timevar" value="6pm">6:00 PM</option>
+                                    <option id="timevar" value="6:30pm">6:30 PM</option>
+                                    <option id="timevar" value="7pm">7:00 PM</option>
+                                    <option id="timevar" value="7:30pm">7:30 PM</option>
+                                    <option id="timevar" value="8pm">8:00 PM</option>
+                                    <option id="timevar" value="8:30pm">8:30 PM</option>
+                                    <option id="timevar" value="9pm">9:00 PM</option>
+                                    <option id="timevar" value="9:30pm">9:30 PM</option>
+                                    <option id="timevar" value="10pm">10:00 PM</option>
+                                    <option id="timevar" value="10:30pm">10:30 PM</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="number-option">
+                            <label class="label-radio"> Select Your Dining Space</label>
+                            <div class="radio-item-list">  <!-- radio allows choice between options -->
+                                <span class="radio-item">
+                                    <input type="radio" name="number_people" value="2" id="number_people_2" />
+                                    <label for="number_people_2">2</label>
+                                </span>
+                                <span class="radio-item ">
+                                    <input type="radio" name="number_people" value="4" id="number_people_4" />
+                                    <label for="number_people_4">4</label>
+                                </span>
+                                <span class="radio-item">
+                                    <input type="radio" name="number_people" value="6" id="number_people_6" />
+                                    <label for="number_people_6">6</label>
+                                </span>
+                                <span class="radio-item">
+                                    <input type="radio" name="number_people" value="8" id="number_people_8" />
+                                    <label for="number_people_8">8</label>
+                                </span>
+                                <span class="radio-item">
+                                    <input type="radio" name="number_people" value="10" id="number_people_10" />
+                                    <label for="number_people_10">10</label>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="form-submit">
+                          <button type="submit" value="Book now" class="submit" name="submit" /> <!-- soon to be used to link to next page -->
+          
+                          <a href="homepage.html" type="submit" class="verify-booking">Verify your booking info from your phone</a> <!-- soon to be used to link to next page -->
+                   
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
